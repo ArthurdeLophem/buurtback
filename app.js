@@ -43,6 +43,8 @@ const corsOptions = {
     'https://app.buurtplanr.com',
     'https://www.app.buurtplanr.com',
     'http://www.buurtplanr.com',
+    'https://buurt.arthuris.online/',
+    'https://www.buurt.arthuris.online/',
   ]
 }
 app.use(cors(corsOptions));
