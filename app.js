@@ -28,29 +28,7 @@ try {
 
 const app = express();
 
-const corsOptions = {
-  origin: [
-    'http://localhost:3002',
-    'http://localhost:3000',
-    'https://giddy-cummerbund-cod.cyclic.app/',
-    'http://127.0.0.1:3000',
-    'http://127.0.0.1:3002',
-    'https://buurtplanr.vercel.app',
-    'https://buurtplanr.com',
-    'www.buurtplanr.com',
-    'http://buurtplanr.com',
-    'http://app.buurtplanr.com',
-    'https://app.buurtplanr.com',
-    'https://www.app.buurtplanr.com',
-    'http://www.buurtplanr.com',
-    'https://buurt.arthuris.online/',
-    'https://www.buurt.arthuris.online/',
-    'http://buurt.arthuris.online/',
-    'http://www.buurt.arthuris.online/',
-    'www.buurt.arthuris.online/',
-  ]
-}
-app.use(cors(corsOptions));
+app.use(cors());
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
